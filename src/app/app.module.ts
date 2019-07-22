@@ -3,14 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
+
+import {ContatoModule} from './contato/contato.module';
+import {NossaVisaoModule} from './nossa-visao/nossa-visao.module';
+import {QuemSomosModule} from './quem-somos/quem-somos.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    ContatoModule,
+    NossaVisaoModule,
+    QuemSomosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
